@@ -1,106 +1,510 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bảng Giá Dịch Vụ - SPA H&D</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bảng Giá Dịch Vụ - SPA H&D</title>
+   <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên Hệ & Đặt Lịch - SPA H&D</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  
+  <!-- DÒNG THÊM LOGO 3TL SPA LÊN THẺ TRÌNH DUYỆT -->
+  <link rel="icon" type="image/jpeg" href="logo.jpg" />
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="flex flex-col min-h-screen">
-
-  <header class="spa-header sticky top-0 z-50 text-white shadow-lg">
-    <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
-      <a href="index.html" class="flex items-center gap-3">
-        <img src="logo.jpg" alt="Logo SPA H&D" class="h-12 w-12 rounded-full object-cover border-2 border-[#d4af37]">
-        <span class="text-2xl font-bold text-[#fceecb] brand-font">SPA H&D</span>
-      </a>
-      <nav class="hidden md:flex space-x-8 font-medium text-sm text-[#f0e2d5]">
-        <a href="index.html" class="hover:text-[#d4af37]">Trang chủ</a>
-        <a href="gioi-thieu.html" class="hover:text-[#d4af37]">Giới thiệu</a>
-        <a href="dich-vu.html" class="hover:text-[#d4af37]">Dịch vụ</a>
-        <a href="bang-gia.html" class="text-[#d4af37] font-bold border-b-2 border-[#d4af37] pb-1">Bảng giá</a>
-        <a href="khach-hang.html" class="hover:text-[#d4af37]">Khách hàng</a>
-        <a href="tin-tuc.html" class="hover:text-[#d4af37]">Tin tức</a>
-        <a href="lien-he.html" class="hover:text-[#d4af37]">Liên hệ</a>
-      </nav>
-      <a href="lien-he.html" class="hidden sm:inline-block btn-primary px-6 py-2.5 rounded-full text-sm">Đặt Lịch Hẹn</a>
-    </div>
-  </header>
-
-  <main class="max-w-5xl mx-auto px-4 py-12 flex-grow">
-    <div class="text-center mb-10">
-      <h1 class="text-3xl md:text-4xl font-bold text-[#4a2e1b] brand-font">BẢNG GIÁ DỊCH VỤ NIÊM YẾT</h1>
-      <p class="text-gray-600 mt-2 text-sm">Cập nhật trọn gói 8 dịch vụ thư giãn & trị liệu</p>
+  ...
+    <!-- TOP BAR -->
+    <div
+      class="bg-[#2c1a0e] text-[#e5d2be] text-xs py-2 px-4 border-b border-[#d9822b]/30"
+    >
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <span>📍 9B Liêu Bình Hương, KP4, Tân An Hội | ⏰ 08:30 - 20:30</span>
+        <span class="hidden md:inline">
+          📞 Hotline/Zalo:
+          <a
+            href="tel:0977341310"
+            class="font-bold text-[#d9822b] hover:underline"
+            >0977341310</a
+          >
+        </span>
+      </div>
     </div>
 
-    <div class="overflow-x-auto bg-white rounded-2xl shadow-sm border border-[#d4af37]/30 p-6">
-      <table class="w-full text-left border-collapse">
-        <thead>
-          <tr class="bg-[#4a2e1b] text-[#fceecb] font-semibold text-sm">
-            <th class="p-4 rounded-l-xl">Tên Dịch Vụ</th>
-            <th class="p-4">Thời Gian</th>
-            <th class="p-4">Giá Niêm Yết</th>
-            <th class="p-4 rounded-r-xl text-center">Đặt Lịch</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-gray-100 text-sm">
-          <tr class="hover:bg-[#faf6f0]">
-            <td class="p-4 font-bold text-[#4a2e1b]">1. Gội đầu dưỡng sinh thảo mộc</td>
-            <td class="p-4 text-gray-600">60 phút</td>
-            <td class="p-4 font-bold text-[#d4af37]">199.000 VNĐ</td>
-            <td class="p-4 text-center"><a href="lien-he.html" class="btn-primary px-4 py-1.5 rounded-full text-xs">Đặt hẹn</a></td>
-          </tr>
-          <tr class="hover:bg-[#faf6f0]">
-            <td class="p-4 font-bold text-[#4a2e1b]">2. Chăm sóc da chuẩn Y Khoa</td>
-            <td class="p-4 text-gray-600">75 phút</td>
-            <td class="p-4 font-bold text-[#d4af37]">290.000 VNĐ</td>
-            <td class="p-4 text-center"><a href="lien-he.html" class="btn-primary px-4 py-1.5 rounded-full text-xs">Đặt hẹn</a></td>
-          </tr>
-          <tr class="hover:bg-[#faf6f0]">
-            <td class="p-4 font-bold text-[#4a2e1b]">3. Massage chân & Chà gót hồng</td>
-            <td class="p-4 text-gray-600">60 phút</td>
-            <td class="p-4 font-bold text-[#d4af37]">250.000 VNĐ</td>
-            <td class="p-4 text-center"><a href="lien-he.html" class="btn-primary px-4 py-1.5 rounded-full text-xs">Đặt hẹn</a></td>
-          </tr>
-          <tr class="hover:bg-[#faf6f0]">
-            <td class="p-4 font-bold text-[#4a2e1b]">4. Massage Body đá nóng trị liệu</td>
-            <td class="p-4 text-gray-600">90 phút</td>
-            <td class="p-4 font-bold text-[#d4af37]">450.000 VNĐ</td>
-            <td class="p-4 text-center"><a href="lien-he.html" class="btn-primary px-4 py-1.5 rounded-full text-xs">Đặt hẹn</a></td>
-          </tr>
-          <tr class="hover:bg-[#faf6f0]">
-            <td class="p-4 font-bold text-[#4a2e1b]">5. Điện di Vitamin C sáng da</td>
-            <td class="p-4 text-gray-600">60 phút</td>
-            <td class="p-4 font-bold text-[#d4af37]">350.000 VNĐ</td>
-            <td class="p-4 text-center"><a href="lien-he.html" class="btn-primary px-4 py-1.5 rounded-full text-xs">Đặt hẹn</a></td>
-          </tr>
-          <tr class="hover:bg-[#faf6f0]">
-            <td class="p-4 font-bold text-[#4a2e1b]">6. Thải độc da CO2 Detox</td>
-            <td class="p-4 text-gray-600">75 phút</td>
-            <td class="p-4 font-bold text-[#d4af37]">490.000 VNĐ</td>
-            <td class="p-4 text-center"><a href="lien-he.html" class="btn-primary px-4 py-1.5 rounded-full text-xs">Đặt hẹn</a></td>
-          </tr>
-          <tr class="hover:bg-[#faf6f0]">
-            <td class="p-4 font-bold text-[#4a2e1b]">7. Triệt lông vĩnh viễn Diode Laser</td>
-            <td class="p-4 text-gray-600">45 phút</td>
-            <td class="p-4 font-bold text-[#d4af37]">199.000 VNĐ</td>
-            <td class="p-4 text-center"><a href="lien-he.html" class="btn-primary px-4 py-1.5 rounded-full text-xs">Đặt hẹn</a></td>
-          </tr>
-          <tr class="hover:bg-[#faf6f0]">
-            <td class="p-4 font-bold text-[#4a2e1b]">8. Tắm trắng phi thuyền thảo mộc</td>
-            <td class="p-4 text-gray-600">90 phút</td>
-            <td class="p-4 font-bold text-[#d4af37]">690.000 VNĐ</td>
-            <td class="p-4 text-center"><a href="lien-he.html" class="btn-primary px-4 py-1.5 rounded-full text-xs">Đặt hẹn</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </main>
+    <!-- HEADER -->
+    <header
+      class="bg-[#4a2810] sticky top-0 z-50 text-white shadow-lg border-b border-[#d9822b]/30"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="index.html" class="flex items-center gap-3">
+            <img
+              src="logo.jpg"
+              alt="Logo SPA H&D"
+              class="h-12 w-12 rounded-full object-cover border-2 border-[#d9822b]"
+            />
+            <div>
+              <span
+                class="text-2xl font-bold tracking-wider text-[#fceecb] block leading-none"
+                >SPA H&D</span
+              >
+              <p
+                class="text-[9px] tracking-widest text-[#d9822b] uppercase mt-1"
+              >
+                Luxury Beauty & Wellness
+              </p>
+            </div>
+          </a>
 
-  <footer class="bg-[#2c1a0e] text-[#e5d2be] py-6 text-center text-xs mt-auto border-t border-[#d4af37]/30">
-    &copy; 2026 SPA H&D. All rights reserved.
-  </footer>
-  <script src="js/main.js"></script>
-</body>
+          <!-- MENU ĐIỀU HƯỚNG -->
+          <nav
+            class="hidden md:flex space-x-8 font-medium text-sm text-[#f0e2d5]"
+          >
+            <a href="index.html" class="hover:text-[#d9822b] transition"
+              >Trang chủ</a
+            >
+            <a href="gioi-thieu.html" class="hover:text-[#d9822b] transition"
+              >Giới thiệu</a
+            >
+            <a href="dich-vu.html" class="hover:text-[#d9822b] transition"
+              >Dịch vụ</a
+            >
+            <a
+              href="bang-gia.html"
+              class="text-[#d9822b] font-bold border-b-2 border-[#d9822b] pb-1"
+              >Bảng giá</a
+            >
+            <a href="khach-hang.html" class="hover:text-[#d9822b] transition"
+              >Khách hàng</a
+            >
+            <a href="tin-tuc.html" class="hover:text-[#d9822b] transition"
+              >Tin tức</a
+            >
+            <a href="lien-he.html" class="hover:text-[#d9822b] transition"
+              >Liên hệ</a
+            >
+          </nav>
+
+          <a
+            href="lien-he.html"
+            class="hidden sm:inline-block bg-[#d9822b] hover:bg-[#b8691b] text-white px-6 py-2.5 rounded-full text-sm font-semibold shadow-md transition"
+          >
+            Đặt Lịch Hẹn
+          </a>
+
+          <button
+            id="menu-btn"
+            onclick="toggleMobileNav()"
+            class="md:hidden text-[#d9822b] focus:outline-none"
+          >
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div
+        id="mobile-nav"
+        class="hidden md:hidden bg-[#3a2214] px-4 py-3 space-y-2 text-sm border-t border-[#d9822b]/30"
+      >
+        <a href="index.html" class="block text-[#f0e2d5] hover:text-[#d9822b]"
+          >Trang chủ</a
+        >
+        <a
+          href="gioi-thieu.html"
+          class="block text-[#f0e2d5] hover:text-[#d9822b]"
+          >Giới thiệu</a
+        >
+        <a href="dich-vu.html" class="block text-[#f0e2d5] hover:text-[#d9822b]"
+          >Dịch vụ</a
+        >
+        <a href="bang-gia.html" class="block text-[#d9822b] font-bold"
+          >Bảng giá</a
+        >
+        <a
+          href="khach-hang.html"
+          class="block text-[#f0e2d5] hover:text-[#d9822b]"
+          >Khách hàng</a
+        >
+        <a href="tin-tuc.html" class="block text-[#f0e2d5] hover:text-[#d9822b]"
+          >Tin tức</a
+        >
+        <a href="lien-he.html" class="block text-[#f0e2d5] hover:text-[#d9822b]"
+          >Liên hệ</a
+        >
+      </div>
+    </header>
+
+    <!-- HERO TITLE SECTION -->
+    <section
+      class="bg-gradient-to-b from-[#4a2810] to-[#2c1a0e] text-white py-14 px-4 text-center border-b border-[#d9822b]/20"
+    >
+      <span class="text-[#d9822b] text-xs uppercase tracking-widest font-bold"
+        >Minh Bạch & Tận Tâm</span
+      >
+      <h1 class="text-3xl md:text-5xl font-bold text-[#fceecb] mt-2 mb-4">
+        BẢNG GIÁ DỊCH VỤ NIÊM YẾT
+      </h1>
+      <p
+        class="text-sm text-[#e5d2be] max-w-2xl mx-auto font-light leading-relaxed"
+      >
+        Cam kết không phát sinh chi phí. Trải nghiệm dịch vụ chăm sóc sắc đẹp và
+        dưỡng sinh cao cấp với mức giá tối ưu nhất.
+      </p>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="max-w-5xl mx-auto px-4 py-12 flex-grow">
+      <!-- TABLE CARD CONTAINER -->
+      <div
+        class="bg-white rounded-3xl shadow-xl border border-[#d9822b]/20 overflow-hidden"
+      >
+        <!-- Table Header Bar -->
+        <div
+          class="bg-[#4a2810] px-6 py-4 border-b border-[#d9822b]/30 flex flex-col sm:flex-row justify-between items-center gap-2"
+        >
+          <div class="flex items-center gap-2 text-[#fceecb]">
+            <i class="fa-solid fa-sparkles text-[#d9822b]"></i>
+            <span class="font-bold text-base">Trọn Gói 8 Dịch Vụ Nổi Bật</span>
+          </div>
+          <span
+            class="text-xs text-[#e5d2be] bg-[#2c1a0e] px-3 py-1 rounded-full border border-[#d9822b]/30"
+          >
+            ✨ Áp dụng khuyến mãi hiện hành
+          </span>
+        </div>
+
+        <!-- Responsive Table -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr
+                class="bg-[#faf6f0] text-[#4a2810] text-xs uppercase tracking-wider font-bold border-b border-[#d9822b]/20"
+              >
+                <th class="p-4 md:p-5">Tên Dịch Vụ</th>
+                <th class="p-4 md:p-5 text-center">Thời Gian</th>
+                <th class="p-4 md:p-5 text-right">Giá Niêm Yết</th>
+                <th class="p-4 md:p-5 text-center">Thao Tác</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100 text-sm">
+              <tr class="hover:bg-[#fdfaf7] transition">
+                <td class="p-4 md:p-5">
+                  <div class="font-bold text-[#4a2810]">
+                    1. Gội đầu dưỡng sinh thảo mộc
+                  </div>
+                  <div class="text-xs text-gray-500 mt-0.5">
+                    Ấn huyệt cổ vai gáy & gội thảo mộc thiên nhiên
+                  </div>
+                </td>
+                <td class="p-4 md:p-5 text-center text-gray-600 font-medium">
+                  60 phút
+                </td>
+                <td
+                  class="p-4 md:p-5 text-right font-bold text-[#d9822b] text-base"
+                >
+                  199.000 VNĐ
+                </td>
+                <td class="p-4 md:p-5 text-center">
+                  <a
+                    href="lien-he.html"
+                    class="inline-block bg-[#4a2810] hover:bg-[#d9822b] text-white px-4 py-1.5 rounded-full text-xs font-semibold shadow transition"
+                  >
+                    Đặt hẹn
+                  </a>
+                </td>
+              </tr>
+
+              <tr class="hover:bg-[#fdfaf7] transition">
+                <td class="p-4 md:p-5">
+                  <div class="font-bold text-[#4a2810]">
+                    2. Chăm sóc da chuẩn Y Khoa
+                  </div>
+                  <div class="text-xs text-gray-500 mt-0.5">
+                    Lấy nhân mụn tiệt trùng & chiếu đèn Bio-Light
+                  </div>
+                </td>
+                <td class="p-4 md:p-5 text-center text-gray-600 font-medium">
+                  75 phút
+                </td>
+                <td
+                  class="p-4 md:p-5 text-right font-bold text-[#d9822b] text-base"
+                >
+                  300.000 - 350.000 VNĐ
+                </td>
+                <td class="p-4 md:p-5 text-center">
+                  <a
+                    href="lien-he.html"
+                    class="inline-block bg-[#4a2810] hover:bg-[#d9822b] text-white px-4 py-1.5 rounded-full text-xs font-semibold shadow transition"
+                  >
+                    Đặt hẹn
+                  </a>
+                </td>
+              </tr>
+
+              <tr class="hover:bg-[#fdfaf7] transition">
+                <td class="p-4 md:p-5">
+                  <div class="font-bold text-[#4a2810]">
+                    3. Massage chân & Chà gót hồng
+                  </div>
+                  <div class="text-xs text-gray-500 mt-0.5">
+                    Xông chân thảo dược & trị nứt nẻ gót chân
+                  </div>
+                </td>
+                <td class="p-4 md:p-5 text-center text-gray-600 font-medium">
+                  60 phút
+                </td>
+                <td
+                  class="p-4 md:p-5 text-right font-bold text-[#d9822b] text-base"
+                >
+                  250.000 VNĐ
+                </td>
+                <td class="p-4 md:p-5 text-center">
+                  <a
+                    href="lien-he.html"
+                    class="inline-block bg-[#4a2810] hover:bg-[#d9822b] text-white px-4 py-1.5 rounded-full text-xs font-semibold shadow transition"
+                  >
+                    Đặt hẹn
+                  </a>
+                </td>
+              </tr>
+
+              <tr class="hover:bg-[#fdfaf7] transition">
+                <td class="p-4 md:p-5">
+                  <div class="font-bold text-[#4a2810]">
+                    4. Massage Body đá nóng trị liệu
+                  </div>
+                  <div class="text-xs text-gray-500 mt-0.5">
+                    Đá thạch anh giữ nhiệt đả thông kinh lạc
+                  </div>
+                </td>
+                <td class="p-4 md:p-5 text-center text-gray-600 font-medium">
+                  90 phút
+                </td>
+                <td
+                  class="p-4 md:p-5 text-right font-bold text-[#d9822b] text-base"
+                >
+                  450.000 VNĐ
+                </td>
+                <td class="p-4 md:p-5 text-center">
+                  <a
+                    href="lien-he.html"
+                    class="inline-block bg-[#4a2810] hover:bg-[#d9822b] text-white px-4 py-1.5 rounded-full text-xs font-semibold shadow transition"
+                  >
+                    Đặt hẹn
+                  </a>
+                </td>
+              </tr>
+
+              <tr class="hover:bg-[#fdfaf7] transition">
+                <td class="p-4 md:p-5">
+                  <div class="font-bold text-[#4a2810]">
+                    5. Điện di Vitamin C sáng da
+                  </div>
+                  <div class="text-xs text-gray-500 mt-0.5">
+                    Mờ thâm nám, giúp da trắng hồng tự nhiên
+                  </div>
+                </td>
+                <td class="p-4 md:p-5 text-center text-gray-600 font-medium">
+                  60 phút
+                </td>
+                <td
+                  class="p-4 md:p-5 text-right font-bold text-[#d9822b] text-base"
+                >
+                  350.000 VNĐ
+                </td>
+                <td class="p-4 md:p-5 text-center">
+                  <a
+                    href="lien-he.html"
+                    class="inline-block bg-[#4a2810] hover:bg-[#d9822b] text-white px-4 py-1.5 rounded-full text-xs font-semibold shadow transition"
+                  >
+                    Đặt hẹn
+                  </a>
+                </td>
+              </tr>
+
+              <tr class="hover:bg-[#fdfaf7] transition">
+                <td class="p-4 md:p-5">
+                  <div class="font-bold text-[#4a2810]">
+                    6. Thải độc da CO2 Detox
+                  </div>
+                  <div class="text-xs text-gray-500 mt-0.5">
+                    Đào thải tạp chất & bã nhờn sâu trong da
+                  </div>
+                </td>
+                <td class="p-4 md:p-5 text-center text-gray-600 font-medium">
+                  75 phút
+                </td>
+                <td
+                  class="p-4 md:p-5 text-right font-bold text-[#d9822b] text-base"
+                >
+                  490.000 VNĐ
+                </td>
+                <td class="p-4 md:p-5 text-center">
+                  <a
+                    href="lien-he.html"
+                    class="inline-block bg-[#4a2810] hover:bg-[#d9822b] text-white px-4 py-1.5 rounded-full text-xs font-semibold shadow transition"
+                  >
+                    Đặt hẹn
+                  </a>
+                </td>
+              </tr>
+
+              <tr class="hover:bg-[#fdfaf7] transition">
+                <td class="p-4 md:p-5">
+                  <div class="font-bold text-[#4a2810]">
+                    7. Triệt lông vĩnh viễn Diode Laser
+                  </div>
+                  <div class="text-xs text-gray-500 mt-0.5">
+                    Triệt lông tận gốc, an toàn & không đau rát
+                  </div>
+                </td>
+                <td class="p-4 md:p-5 text-center text-gray-600 font-medium">
+                  45 phút
+                </td>
+                <td
+                  class="p-4 md:p-5 text-right font-bold text-[#d9822b] text-base"
+                >
+                  199.000 VNĐ
+                </td>
+                <td class="p-4 md:p-5 text-center">
+                  <a
+                    href="lien-he.html"
+                    class="inline-block bg-[#4a2810] hover:bg-[#d9822b] text-white px-4 py-1.5 rounded-full text-xs font-semibold shadow transition"
+                  >
+                    Đặt hẹn
+                  </a>
+                </td>
+              </tr>
+
+              <tr class="hover:bg-[#fdfaf7] transition">
+                <td class="p-4 md:p-5">
+                  <div class="font-bold text-[#4a2810]">
+                    8. Tắm trắng phi thuyền thảo mộc
+                  </div>
+                  <div class="text-xs text-gray-500 mt-0.5">
+                    Bật tông nhanh chóng, kích thích collagen
+                  </div>
+                </td>
+                <td class="p-4 md:p-5 text-center text-gray-600 font-medium">
+                  90 phút
+                </td>
+                <td
+                  class="p-4 md:p-5 text-right font-bold text-[#d9822b] text-base"
+                >
+                  690.000 VNĐ
+                </td>
+                <td class="p-4 md:p-5 text-center">
+                  <a
+                    href="lien-he.html"
+                    class="inline-block bg-[#4a2810] hover:bg-[#d9822b] text-white px-4 py-1.5 rounded-full text-xs font-semibold shadow transition"
+                  >
+                    Đặt hẹn
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Table Footer Note -->
+        <div
+          class="bg-[#faf6f0] p-4 text-xs text-gray-600 border-t border-[#d9822b]/20 flex flex-col sm:flex-row justify-between items-center gap-2"
+        >
+          <span
+            >📌 Giá trên đã bao gồm toàn bộ chi phí vật tư và kỹ thuật
+            viên.</span
+          >
+          <span class="font-semibold text-[#4a2810]"
+            >Hotline đặt lịch gấp:
+            <a href="tel:0977341310" class="text-[#d9822b] hover:underline"
+              >0977341310</a
+            ></span
+          >
+        </div>
+      </div>
+
+      <!-- BANNER TƯ VẤN VÀ ƯU ĐÃI -->
+      <div
+        class="mt-12 bg-gradient-to-r from-[#4a2810] via-[#3a2214] to-[#2c1a0e] rounded-3xl p-8 md:p-10 text-center text-white border border-[#d9822b]/30 shadow-xl"
+      >
+        <h2 class="text-2xl font-bold text-[#fceecb] mb-2">
+          🎁 Đặt Lịch Trước Để Nhận Ưu Đãi Giảm 10%
+        </h2>
+        <p class="text-gray-300 text-sm max-w-xl mx-auto mb-6">
+          Giảm ngay 10% cho khách hàng đăng ký hẹn trước qua Zalo hoặc Hotline!
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="lien-he.html"
+            class="bg-[#d9822b] hover:bg-[#b8691b] text-white px-6 py-2.5 rounded-full font-bold text-sm transition shadow-lg"
+          >
+            <i class="fa-solid fa-calendar-check mr-2"></i>Đặt Lịch Ngay
+          </a>
+          <a
+            href="https://zalo.me/0977341310"
+            target="_blank"
+            class="bg-white/10 hover:bg-white/20 text-[#fceecb] border border-[#d9822b]/50 px-6 py-2.5 rounded-full font-bold text-sm transition"
+          >
+            <i class="fa-solid fa-comments mr-2"></i>Nhắn Zalo Tư Vấn
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-[#2c1a0e] text-[#e5d2be] text-sm mt-auto border-t border-[#d9822b]/30"
+    >
+      <div class="max-w-7xl mx-auto px-4 py-10 text-center">
+        <div class="flex justify-center gap-4 mb-4">
+          <a
+            href="https://www.facebook.com/share/1FgnRtE3Yc/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-10 h-10 rounded-full bg-[#0033FF] flex items-center justify-center text-white text-lg hover:opacity-80 transition"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/ivan.nt1?igsh=MXBiNXhraDBvM25pZA=="
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 flex items-center justify-center text-white text-lg hover:opacity-80 transition"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://zalo.me/0977341310"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-10 h-10 rounded-full bg-[#0068ff] flex items-center justify-center text-white font-bold text-sm hover:opacity-80 transition transform hover:scale-110"
+            title="Zalo"
+          >
+            Zalo
+          </a>
+        </div>
+        <p class="mb-1 font-bold text-sm text-[#fceecb]">
+          💬 Cần tư vấn gấp? Hotline/Zalo: 0977341310
+        </p>
+        <p class="text-xs text-[#c0a286]">
+          Địa chỉ: 9B Liêu Bình Hương, KP4, Tân An Hội
+        </p>
+        <p class="text-xs text-[#8c6d53] mt-4">
+          &copy; 2026 SPA H&D. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMobileNav() {
+        const nav = document.getElementById("mobile-nav");
+        nav.classList.toggle("hidden");
+      }
+    </script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
