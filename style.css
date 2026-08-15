@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* Giữ nguyên hệ màu gốc của bạn */
+  --primary: #4a2810; /* Nâu cam đậm */
+  --primary-light: #6e3f1d; /* Nâu cam */
+  --accent: #d9822b; /* Cam đất nổi bật */
+  --accent-hover: #b5651a; /* Cam đất đậm khi hover */
+
+  /* Sửa lỗi màu nền & chữ để giao diện dịu mắt hơn */
+  --bg-main: #6b5241; /* Nền kem ấm (tạo độ dịu thay vì phủ nâu toàn bộ) */
+  --card-bg: #ffffff; /* Nền thẻ dịch vụ */
+  --text: #2b1608; /* Màu chữ chính */
+  --text-muted: #6b5241; /* Màu chữ phụ */
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text);
+  margin: 0;
+}
+
+.brand-font {
+  font-family: "Playfair Display", serif;
+}
+
+.spa-header {
+  background: var(--primary);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--accent);
+}
+
+/* Card hiệu ứng cao cấp */
+.spa-card {
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid rgba(217, 130, 43, 0.2);
+  background: var(--card-bg);
+  border-radius: 1rem;
+}
+
+.spa-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(74, 40, 16, 0.18);
+  border-color: var(--accent);
+}
+
+/* Nút bấm chính */
+.btn-primary {
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 8px 25px rgba(217, 130, 43, 0.4);
+}
+
+/* Nút bấm phụ */
+.btn-secondary {
+  background: var(--primary-light);
+  color: #ffffff;
+  border: 1px solid var(--accent);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: #ffffff;
+}
+.spa-card {
+  transition: all 0.4s ease;
+  border: 1px solid rgba(217, 130, 43, 0.2);
+  background: #fff;
+  border-radius: 16px;
+}
+
+.spa-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(74, 40, 16, 0.18);
+  border-color: #d9822b;
+}
+
+.spa-header {
+  background: #4a2810 !important;
+}
+
+.spa-header nav a {
+  color: #f5e8cf !important;
+  transition: 0.3s ease;
+}
+
+.spa-header nav a:hover {
+  color: #fff8e8 !important;
+}

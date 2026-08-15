@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPA H&D - Chăm Sóc Da & Trị Liệu Chuyên Sâu</title>
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên Hệ & Đặt Lịch - SPA H&D</title>
+  
+  <!-- DÒNG THÊM LOGO 3TL SPA LÊN THẺ TRÌNH DUYỆT -->
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  ...
+    <!-- TOP BAR -->
+    <div
+      class="bg-[#2c1a0e] text-[#e5d2be] text-xs py-2 px-4 border-b border-[#d9822b]/30"
+    >
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <span>📍 9B Liêu Bình Hương, KP4, Tân An Hội | ⏰ 08:30 - 20:30</span>
+        <span class="hidden md:inline">
+          📞 Hotline/Zalo:
+          <a
+            href="tel:0977341310"
+            class="font-bold text-[#d9822b] hover:underline"
+            >0977341310</a
+          >
+        </span>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header
+      class="bg-[#4a2810] sticky top-0 z-50 text-white shadow-lg border-b border-[#d9822b]/30"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo & Tên thương hiệu -->
+          <a href="index.html" class="flex items-center gap-3">
+            <img
+              src="images/logo.jpg"
+              alt="Logo SPA H&D"
+              class="h-12 w-12 rounded-full object-cover border-2 border-[#d9822b]"
+            />
+            <div>
+              <span
+                class="text-2xl font-bold tracking-wider brand-font text-[#fceecb] block leading-none"
+              >
+                SPA H&D
+              </span>
+              <p
+                class="text-[9px] tracking-widest text-[#d9822b] uppercase mt-1"
+              >
+                Luxury Beauty & Wellness
+              </p>
+            </div>
+          </a>
+
+          <!-- Menu máy tính -->
+          <nav
+            class="hidden md:flex space-x-8 font-medium text-sm text-[#f0e2d5]"
+          >
+            <a
+              href="index.html"
+              class="text-[#d9822b] font-bold border-b-2 border-[#d9822b] pb-1"
+            >
+              Trang chủ
+            </a>
+            <a href="gioi-thieu.html" class="hover:text-[#d9822b] transition"
+              >Giới thiệu</a
+            >
+            <a href="dich-vu.html" class="hover:text-[#d9822b] transition"
+              >Dịch vụ (8)</a
+            >
+            <a href="bang-gia.html" class="hover:text-[#d9822b] transition"
+              >Bảng giá</a
+            >
+            <a href="khach-hang.html" class="hover:text-[#d9822b] transition"
+              >Khách hàng</a
+            >
+            <a href="tin-tuc.html" class="hover:text-[#d9822b] transition"
+              >Tin tức</a
+            >
+            <a href="lien-he.html" class="hover:text-[#d9822b] transition"
+              >Liên hệ</a
+            >
+          </nav>
+
+          <!-- Nút Đặt Lịch Hẹn -->
+          <a
+            href="lien-he.html"
+            class="hidden sm:inline-block bg-[#d9822b] hover:bg-[#b8691b] text-white px-6 py-2.5 rounded-full text-sm font-semibold shadow-md transition"
+          >
+            Đặt Lịch Hẹn
+          </a>
+
+          <!-- Nút Mobile Menu Toggle -->
+          <button
+            id="menu-btn"
+            class="md:hidden text-[#d9822b] focus:outline-none"
+          >
+            <svg
+              class="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu di động -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-[#3a2214] px-4 py-3 space-y-2 text-sm border-t border-[#d9822b]/30"
+      >
+        <a href="index.html" class="block text-[#d9822b] font-bold"
+          >Trang chủ</a
+        >
+        <a
+          href="gioi-thieu.html"
+          class="block text-[#f0e2d5] hover:text-[#d9822b]"
+          >Giới thiệu</a
+        >
+        <a href="dich-vu.html" class="block text-[#f0e2d5] hover:text-[#d9822b]"
+          >Dịch vụ (8)</a
+        >
+        <a
+          href="bang-gia.html"
+          class="block text-[#f0e2d5] hover:text-[#d9822b]"
+          >Bảng giá</a
+        >
+        <a
+          href="khach-hang.html"
+          class="block text-[#f0e2d5] hover:text-[#d9822b]"
+          >Khách hàng</a
+        >
+        <a href="tin-tuc.html" class="block text-[#f0e2d5] hover:text-[#d9822b]"
+          >Tin tức</a
+        >
+        <a href="lien-he.html" class="block text-[#f0e2d5] hover:text-[#d9822b]"
+          >Liên hệ</a
+        >
+        <a
+          href="lien-he.html"
+          class="block text-center btn-primary py-2 rounded-full mt-2"
+        >
+          Đặt Lịch Hẹn
+        </a>
+      </div>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section
+      class="relative min-h-[520px] flex items-center justify-center text-white bg-cover bg-center"
+      style="
+      background-image: url('https://img5.thuthuatphanmem.vn/uploads/2021/11/20/hinh-anh-spa-thien-nhien-tuyet-dep_104538239.jpg')"
+    >
+      <!-- Lớp phủ overlay dịu mắt -->
+      <div class="absolute inset-0 bg-black/45"></div>
+
+      <!-- Nội dung Hero -->
+      <div class="relative z-10 text-center max-w-3xl px-4 py-16">
+        <span
+          class="inline-block border border-[#d9822b] text-[#f0e2d5] text-xs md:text-sm font-semibold tracking-widest px-4 py-1.5 rounded-full mb-4 bg-[#4a2810]/70 backdrop-blur-sm"
+        >
+          THIÊN ĐƯỜNG THƯ GIÃN & TRỊ LIỆU
+        </span>
+
+        <h1
+          class="text-4xl md:text-6xl font-bold brand-font text-white mb-4 drop-shadow-md"
+        >
+          SPA H&D
+        </h1>
+
+        <p
+          class="text-sm md:text-lg text-gray-100 mb-8 max-w-2xl mx-auto font-light"
+        >
+          Nâng niu làn da, hồi phục năng lượng với 8+ liệu trình trị liệu y khoa
+          & thư giãn cao cấp.
+        </p>
+
+        <!-- Nút bấm nổi bật -->
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="lien-he.html"
+            class="hidden sm:inline-block bg-[#d9822b] hover:bg-[#b8691b] text-white px-6 py-2.5 rounded-full text-sm font-semibold shadow-md transition"
+          >
+            Đặt Lịch Ngay
+          <a
+            href="dich-vu.html"
+            class="hidden sm:inline-block bg-[#d9822b] hover:bg-[#b8691b] text-white px-6 py-2.5 rounded-full text-sm font-semibold shadow-md transition"
+          >
+            Xem Tất Cả Dịch Vụ
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DANH SÁCH DỊCH VỤ -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+      <div class="text-center mb-14">
+        <span class="text-[#d9822b] font-bold text-xs uppercase tracking-widest"
+          >Dịch Vụ Cao Cấp</span
+        >
+        <h2
+          class="text-3xl md:text-4xl font-bold text-[#4a2810] brand-font mt-1"
+        >
+          HỆ THỐNG DỊCH VỤ TẠI SPA H&D
+        </h2>
+        <div class="w-20 h-1 bg-[#d9822b] mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Dịch vụ 1 -->
+        <div
+          class="spa-card rounded-2xl overflow-hidden flex flex-col shadow-sm"
+        >
+          <div class="h-48 overflow-hidden relative">
+            <img
+              src="https://skinlab.vn/wp-content/uploads/2025/12/goi-dau-duong-sinh-thao-duoc-3.jpg"
+              alt="Gội đầu"
+              class="w-full h-full object-cover"
+            />
+            <span
+              class="absolute top-3 left-3 bg-[#4a2810] text-[#fceecb] text-[10px] px-2.5 py-1 rounded-full font-bold"
+              >HOT</span
+            >
+          </div>
+          <div class="p-5 flex flex-col flex-grow">
+            <h3 class="text-lg font-bold text-[#4a2810] brand-font mb-2">
+              1. Gội Đầu Dưỡng Sinh
+            </h3>
+            <p class="text-[#6b5241] text-xs mb-4 flex-grow">
+              Gội thảo mộc cổ truyền kết hợp ấn huyệt đầu, cổ, vai gáy giải tỏa
+              mệt mỏi.
+            </p>
+            <a
+              href="dich-vu.html"
+              class="text-[#d9822b] font-bold text-xs hover:underline"
+              >Chi tiết &rarr;</a
+            >
+          </div>
+        </div>
+
+        <!-- Dịch vụ 2 -->
+        <div
+          class="spa-card rounded-2xl overflow-hidden flex flex-col shadow-sm"
+        >
+          <div class="h-48 overflow-hidden relative">
+            <img
+              src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80"
+              alt="Chăm sóc da"
+              class="w-full h-full object-cover"
+            />
+            <span
+              class="absolute top-3 left-3 bg-[#d9822b] text-white text-[10px] px-2.5 py-1 rounded-full font-bold"
+              >KHUYÊN DÙNG</span
+            >
+          </div>
+          <div class="p-5 flex flex-col flex-grow">
+            <h3 class="text-lg font-bold text-[#4a2810] brand-font mb-2">
+              2. Chăm Sóc Da Chuẩn Y Khoa
+            </h3>
+            <p class="text-[#6b5241] text-xs mb-4 flex-grow">
+              Lấy nhân mụn vô trùng, chiếu đèn Bio-Light diệt khuẩn & cấp ẩm
+              phục hồi.
+            </p>
+            <a
+              href="dich-vu.html"
+              class="text-[#d9822b] font-bold text-xs hover:underline"
+              >Chi tiết &rarr;</a
+            >
+          </div>
+        </div>
+
+        <!-- Dịch vụ 3 -->
+        <div
+          class="spa-card rounded-2xl overflow-hidden flex flex-col shadow-sm"
+        >
+          <div class="h-48 overflow-hidden relative">
+            <img
+              src="https://www.elle.vn/app/uploads/2024/12/07/624195/Massage-da-nong-la-gi-cong-dung-ELLE-Viet-Nam-6.png"
+              alt="Massage chân"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-5 flex flex-col flex-grow">
+            <h3 class="text-lg font-bold text-[#4a2810] brand-font mb-2">
+              3. Massage Chân & Chà Gót Hồng
+            </h3>
+            <p class="text-[#6b5241] text-xs mb-4 flex-grow">
+              Ngâm chân thảo dược, tẩy tế bào chết & làm mềm vùng gót nứt nẻ.
+            </p>
+            <a
+              href="dich-vu.html"
+              class="text-[#d9822b] font-bold text-xs hover:underline"
+              >Chi tiết &rarr;</a
+            >
+          </div>
+        </div>
+
+        <!-- Dịch vụ 4 -->
+        <div
+          class="spa-card rounded-2xl overflow-hidden flex flex-col shadow-sm"
+        >
+          <div class="h-48 overflow-hidden relative">
+            <img
+              src="https://topmassage.net/wp-content/uploads/2024/03/massage-da-nong-co-tac-dung-gi.jpg"
+              alt="Massage Body"
+              class="w-full h-full object-cover"
+            />
+            <span
+              class="absolute top-3 left-3 bg-[#4a2810] text-[#fceecb] text-[10px] px-2.5 py-1 rounded-full font-bold"
+              >MỚI</span
+            >
+          </div>
+          <div class="p-5 flex flex-col flex-grow">
+            <h3 class="text-lg font-bold text-[#4a2810] brand-font mb-2">
+              4. Massage Body Đá Nóng
+            </h3>
+            <p class="text-[#6b5241] text-xs mb-4 flex-grow">
+              Trị liệu đá nóng thạch anh giúp thư giãn cơ thể và lưu thông máu.
+            </p>
+            <a
+              href="dich-vu.html"
+              class="text-[#d9822b] font-bold text-xs hover:underline"
+              >Chi tiết &rarr;</a
+            >
+          </div>
+        </div>
+
+        <!-- Dịch vụ 5 -->
+        <div
+          class="spa-card rounded-2xl overflow-hidden flex flex-col shadow-sm"
+        >
+          <div class="h-48 overflow-hidden relative">
+            <img
+              src="https://nhathuocngocanh.com/wp-content/uploads/2022/07/dien-di.jpg"
+              alt="Điện di Vitamin C"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-5 flex flex-col flex-grow">
+            <h3 class="text-lg font-bold text-[#4a2810] brand-font mb-2">
+              5. Điện Di Vitamin C Trắng Sáng
+            </h3>
+            <p class="text-[#6b5241] text-xs mb-4 flex-grow">
+              Cung cấp tinh chất Vitamin C đậm đặc làm mờ thâm mụn và đều màu
+              da.
+            </p>
+            <a
+              href="dich-vu.html"
+              class="text-[#d9822b] font-bold text-xs hover:underline"
+              >Chi tiết &rarr;</a
+            >
+          </div>
+        </div>
+
+        <!-- Dịch vụ 6 -->
+        <div
+          class="spa-card rounded-2xl overflow-hidden flex flex-col shadow-sm"
+        >
+          <div class="h-48 overflow-hidden relative">
+            <img
+              src="https://mayspahcm.com/uploads/files/hinh-mn-tren-mng/combo-nan-mun-thai-doc-da-co2-therapy-mayspa.jpg"
+              alt="Thải độc da"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-5 flex flex-col flex-grow">
+            <h3 class="text-lg font-bold text-[#4a2810] brand-font mb-2">
+              6. Thải Độc Da CO2 Detox
+            </h3>
+            <p class="text-[#6b5241] text-xs mb-4 flex-grow">
+              Đào thải độc tố, bã nhờn tích tụ sâu trong lỗ chân lông do khói
+              bụi.
+            </p>
+            <a
+              href="dich-vu.html"
+              class="text-[#d9822b] font-bold text-xs hover:underline"
+              >Chi tiết &rarr;</a
+            >
+          </div>
+        </div>
+
+        <!-- Dịch vụ 7 -->
+        <div
+          class="spa-card rounded-2xl overflow-hidden flex flex-col shadow-sm"
+        >
+          <div class="h-48 overflow-hidden relative">
+            <img
+              src="https://auraclinic.vn/wp-content/uploads/2023/10/bang-gia-triet-long-1-1024x576.webp"
+              alt="Triệt lông Diode Laser"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-5 flex flex-col flex-grow">
+            <h3 class="text-lg font-bold text-[#4a2810] brand-font mb-2">
+              7. Triệt Lông Vĩnh Viễn Diode
+            </h3>
+            <p class="text-[#6b5241] text-xs mb-4 flex-grow">
+              Công nghệ Diode Laser an toàn, không đau rát, se khít lỗ chân
+              lông.
+            </p>
+            <a
+              href="dich-vu.html"
+              class="text-[#d9822b] font-bold text-xs hover:underline"
+              >Chi tiết &rarr;</a
+            >
+          </div>
+        </div>
+
+        <!-- Dịch vụ 8 -->
+        <div
+          class="spa-card rounded-2xl overflow-hidden flex flex-col shadow-sm"
+        >
+          <div class="h-48 overflow-hidden relative">
+            <img
+              src="https://yakson.com.vn/wp-content/uploads/2025/10/cong_nghe_tam_trang_phi_thuyen_la_gi_hieu_qua_cua_phuong_phap_nay1_d62715d696.jpg.jpg"
+              alt="Tắm trắng Hấp Thảo Mộc"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-5 flex flex-col flex-grow">
+            <h3 class="text-lg font-bold text-[#4a2810] brand-font mb-2">
+              8. Tắm Trắng Phi Thuyền
+            </h3>
+            <p class="text-[#6b5241] text-xs mb-4 flex-grow">
+              Nuôi dưỡng làn da toàn thân bật tông mịn màng với dưỡng chất thiên
+              nhiên.
+            </p>
+            <a
+              href="dich-vu.html"
+              class="text-[#d9822b] font-bold text-xs hover:underline"
+              >Chi tiết &rarr;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-[#2c1a0e] text-[#e5d2be] text-sm mt-auto border-t border-[#d9822b]/30"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8"
+      >
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <img
+              src="images/logo.jpg"
+              alt="Logo SPA H&D"
+              class="h-10 w-10 rounded-full border border-[#d9822b]"
+            />
+            <span class="text-xl font-bold text-[#fceecb] brand-font"
+              >SPA H&D</span
+            >
+          </div>
+          <p class="text-xs text-[#c0a286]">
+            Trải nghiệm không gian thư giãn sang trọng & liệu trình chăm sóc
+            chuyên sâu.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-[#fceecb] font-semibold mb-3 brand-font">Liên Hệ</h4>
+          <p class="py-1">📍 Địa chỉ: 9B Liêu Bình Hương, KP4, Tân An Hội</p>
+          <p class="py-1">📞 Điện thoại: 0977341310</p>
+        </div>
+        <div>
+          <h4 class="text-[#fceecb] font-semibold mb-3 brand-font">
+            Giờ Phục Vụ
+          </h4>
+          <p class="py-1">Thứ 2 - Chủ Nhật: 08:30 - 20:30</p>
+        </div>
+      </div>
+      <div class="bg-[#1e1209] py-4 text-center text-xs text-[#9a7e66]">
+        &copy; 2026 SPA H&D. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

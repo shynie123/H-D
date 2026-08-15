@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="page-title">Chi Tiết Dịch Vụ - SPA H&D</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="flex flex-col min-h-screen bg-[#fdfaf7] text-[#2b1608]">
+    <!-- TOP BAR -->
+
+    <div
+      class="bg-[#2c1a0e] text-[#e5d2be] text-xs py-2 px-4 border-b border-[#d9822b]/30"
+    >
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <span>📍 9B Liêu Bình Hương, KP4, Tân An Hội | ⏰ 08:30 - 20:30</span>
+
+        <span class="hidden md:inline">
+          📞 Hotline/Zalo:
+
+          <a
+            href="tel:0977341310"
+            class="font-bold text-[#d9822b] hover:underline"
+            >0977341310</a
+          >
+        </span>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+
+    <header
+      class="bg-[#4a2810] sticky top-0 z-50 text-white shadow-lg border-b border-[#d9822b]/30"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="index.html" class="flex items-center gap-3">
+            <img
+              src="images/logo.jpg"
+              alt="Logo SPA H&D"
+              class="h-12 w-12 rounded-full object-cover border-2 border-[#d9822b]"
+            />
+
+            <div>
+              <span
+                class="text-2xl font-bold tracking-wider text-[#fceecb] block leading-none"
+                >SPA H&D</span
+              >
+
+              <p
+                class="text-[9px] tracking-widest text-[#d9822b] uppercase mt-1"
+              >
+                Luxury Beauty & Wellness
+              </p>
+            </div>
+          </a>
+
+          <nav
+            class="hidden md:flex space-x-8 font-medium text-sm text-[#f0e2d5]"
+          >
+            <a href="index.html" class="hover:text-[#d9822b] transition"
+              >Trang chủ</a
+            >
+
+            <a href="gioi-thieu.html" class="hover:text-[#d9822b] transition"
+              >Giới thiệu</a
+            >
+
+            <a
+              href="dich-vu.html"
+              class="text-[#d9822b] font-bold border-b-2 border-[#d9822b] pb-1"
+              >Dịch vụ (8)</a
+            >
+
+            <a href="bang-gia.html" class="hover:text-[#d9822b] transition"
+              >Bảng giá</a
+            >
+
+            <a href="lien-he.html" class="hover:text-[#d9822b] transition"
+              >Liên hệ</a
+            >
+          </nav>
+
+          <a
+            href="lien-he.html"
+            class="hidden sm:inline-block bg-[#d9822b] hover:bg-[#b8691b] text-white px-6 py-2.5 rounded-full text-sm font-semibold shadow-md transition"
+          >
+            Đặt Lịch Hẹn
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT DETAILS -->
+
+    <main class="max-w-5xl mx-auto px-4 py-12 flex-grow">
+      <!-- Breadcrumb -->
+
+      <div class="text-xs text-gray-500 mb-6 flex items-center gap-2">
+        <a href="index.html" class="hover:text-[#d9822b]">Trang chủ</a>
+
+        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+
+        <a href="dich-vu.html" class="hover:text-[#d9822b]">Dịch vụ</a>
+
+        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+
+        <span id="breadcrumb-name" class="text-[#4a2810] font-bold"
+          >Chi tiết dịch vụ</span
+        >
+      </div>
+
+      <!-- Detail Card -->
+
+      <div
+        class="bg-white rounded-3xl border border-[#d9822b]/20 shadow-xl overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-8 p-6 md:p-8"
+      >
+        <div>
+          <img
+            id="detail-img"
+            src=""
+            alt=""
+            class="w-full h-80 md:h-full object-cover rounded-2xl shadow-md"
+          />
+        </div>
+
+        <div class="flex flex-col justify-between">
+          <div>
+            <span
+              id="detail-[#category]"
+              class="inline-block bg-[#4a2810]/10 text-[#d9822b] text-xs font-bold px-3 py-1 rounded-full mb-3 border border-[#d9822b]/30"
+            ></span>
+
+            <h1
+              id="detail-title"
+              class="text-2xl md:text-3xl font-bold text-[#4a2810] mb-4"
+            ></h1>
+
+            <p
+              id="detail-desc"
+              class="text-gray-600 text-sm leading-relaxed mb-6"
+            ></p>
+
+            <div
+              class="bg-[#fdfaf7] p-4 rounded-xl border border-[#d9822b]/20 space-y-2 mb-6 text-xs text-gray-700"
+            >
+              <p>
+                <i class="fa-solid fa-clock text-[#d9822b] mr-2"></i
+                ><strong>Thời gian:</strong>
+                <span id="detail-time">60 - 90 phút</span>
+              </p>
+
+              <p>
+                <i class="fa-solid fa-[#check-circle] text-[#d9822b] mr-2"></i
+                ><strong>Cam kết:</strong> Chuẩn quy trình y khoa, sử dụng thảo
+                mộc an toàn.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <a
+              href="lien-he.html"
+              class="flex-1 text-center bg-[#d9822b] hover:bg-[#b8691b] text-white py-3 rounded-full font-bold text-sm shadow-md transition"
+            >
+              Đặt Lịch Ngay
+            </a>
+
+            <a
+              href="https://zalo.me/0977341310"
+              target="_blank"
+              class="px-5 py-3 border border-[#d9822b] text-[#d9822b] hover:bg-[#d9822b] hover:text-white rounded-full font-bold text-sm transition flex items-center justify-center"
+            >
+              <i class="fa-solid fa-comments mr-2"></i>Tư vấn Zalo
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer
+      class="bg-[#2c1a0e] text-[#e5d2be] text-sm mt-auto border-t border-[#d9822b]/30"
+    >
+      <div class="max-w-7xl mx-auto px-4 py-8 text-center text-xs">
+        <p class="mb-1 font-bold text-[#fceecb]">
+          💬 Cần tư vấn gấp? Hotline/Zalo: 0977341310
+        </p>
+
+        <p class="text-[#8c6d53] mt-2">
+          &copy; 2026 SPA H&D. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- SCRIPT TỰ ĐỘNG LẤY NỘI DUNG THEO ID -->
+
+    <script>
+      const servicesData = {
+        1: {
+          title: "1. Gội Đầu Dưỡng Sinh",
+
+          category: "Dưỡng Sinh",
+
+          img: "https://skinlab.vn/wp-content/uploads/2025/12/goi-dau-duong-sinh-thao-duoc-3.jpg",
+
+          desc: "Kết hợp gội thảo mộc tự nhiên và ấn huyệt cổ vai gáy giúp thư giãn sâu, giảm căng thẳng, tăng tuần hoàn máu não và kích thích mọc tóc khỏe mạnh.",
+        },
+
+        2: {
+          title: "2. Chăm Sóc Da Y Khoa",
+
+          category: "Trị Liệu Da",
+
+          img: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80",
+
+          desc: "Lấy nhân mụn tiệt trùng chuẩn y khoa, kết hợp chiếu ánh sáng sinh học Bio-Light giúp diệt khuẩn, phục hồi cấu trúc da và ngăn ngừa mụn tái phát.",
+        },
+
+        3: {
+          title: "3. Massage Chân & Chà Gót",
+
+          category: "Thư Giãn",
+
+          img: "https://www.elle.vn/app/uploads/2024/12/07/624195/Massage-da-nong-la-gi-cong-dung-ELLE-Viet-Nam-6.png",
+
+          desc: "Ngâm xông chân bằng thảo dược thiên nhiên, tẩy tế bào chết chà mịn gót chân nứt nẻ và bấm huyệt lưu thông khí huyết toàn thân.",
+        },
+
+        4: {
+          title: "4. Massage Body Đá Nóng",
+
+          category: "Body Massage",
+
+          img: "https://topmassage.net/wp-content/uploads/2024/03/massage-da-nong-co-tac-dung-gi.jpg",
+
+          desc: "Sử dụng đá núi lửa giữ nhiệt chườm và miết dọc các cơ toàn thân, đả thông kinh lạc, giải tỏa mệt mỏi và xua tan đau nhức.",
+        },
+
+        5: {
+          title: "5. Điện Di Vitamin C",
+
+          category: "Trắng Sáng Da",
+
+          img: "https://nhathuocngocanh.com/wp-content/uploads/2022/07/dien-di.jpg",
+
+          desc: "Đưa tinh chất Vitamin C đậm đặc trực tiếp vào sâu tầng hạ thực bằng sóng điện di, giúp mờ thâm nám, đều màu da và dưỡng da sáng mịn rạng rỡ.",
+        },
+
+        6: {
+          title: "6. Thải Độc CO2 Detox",
+
+          category: "Thải Độc Da",
+
+          img: "https://mayspahcm.com/uploads/files/hinh-mn-tren-mng/combo-nan-mun-thai-doc-da-co2-therapy-mayspa.jpg",
+
+          desc: "Sử dụng mặt nạ CO2 thúc đẩy trao đổi chất, đào thải tạp chất, chì và độc tố ẩn sâu dưới da, giúp thu nhỏ lỗ chân lông hiệu quả.",
+        },
+
+        7: {
+          title: "7. Triệt Lông Vĩnh Viễn",
+
+          category: "Công Nghệ Cao",
+
+          img: "https://auraclinic.vn/wp-content/uploads/2023/10/bang-gia-triet-long-1-1024x576.webp",
+
+          desc: "Ứng dụng công nghệ ánh sáng IPL/Diode Laser loại bỏ nang lông tận gốc, giúp da láng mịn, giảm mồ hôi và hỗ trợ trị viêm lỗ chân lông.",
+        },
+
+        8: {
+          title: "8. Tắm Trắng Phi Thuyền Thảo Mộc",
+
+          category: "Dưỡng Trắng Body",
+
+          img: "https://yakson.com.vn/wp-content/uploads/2025/10/cong_nghe_tam_trang_phi_thuyen_la_gi_hieu_qua_cua_phuong_phap_nay1_d62715d696.jpg.jpg",
+
+          desc: "Kết hợp ủ dưỡng thảo mộc thiên nhiên và hấp ánh sáng phi thuyền hồng ngoại giúp kích thích sản sinh collagen, bật tone da an toàn, hồng hào.",
+        },
+      };
+
+      // Lấy tham số id trên URL (vd: ?id=2)
+
+      const urlParams = new URLSearchParams(window.location.search);
+
+      const serviceId = urlParams.get("id") || "1"; // Mặc định là dịch vụ 1 nếu không truyền id
+
+      const service = servicesData[serviceId] || servicesData["1"];
+
+      // Đổ dữ liệu vào trang
+
+      document.getElementById("page-title").innerText =
+        service.title + " - SPA H&D";
+
+      document.getElementById("breadcrumb-name").innerText = service.title;
+
+      document.getElementById("detail-title").innerText = service.title;
+
+      document.getElementById("detail-desc").innerText = service.desc;
+
+      document.getElementById("detail-[#category]").innerText =
+        service.category;
+
+      document.getElementById("detail-img").src = service.img;
+
+      document.getElementById("detail-img").alt = service.title;
+    </script>
+  </body>
+</html>
