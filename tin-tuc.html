@@ -4,19 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tin Tức & Cẩm Nang Làm Đẹp - SPA H&D</title>
-   <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Liên Hệ & Đặt Lịch - SPA H&D</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-  
-  <!-- DÒNG THÊM LOGO 3TL SPA LÊN THẺ TRÌNH DUYỆT -->
-  <link rel="icon" type="image/jpeg" href="logo.jpg" />
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  ...
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#faf6f0] text-gray-800 flex flex-col min-h-screen">
     <!-- TOP BAR -->
     <div
       class="bg-[#2c1a0e] text-[#e5d2be] text-xs py-2 px-4 border-b border-[#d9822b]/30"
@@ -42,7 +37,7 @@
         <div class="flex justify-between items-center h-20">
           <a href="index.html" class="flex items-center gap-3">
             <img
-              src="logo.jpg"
+              src="images/logo.jpg"
               alt="Logo SPA H&D"
               class="h-12 w-12 rounded-full object-cover border-2 border-[#d9822b]"
             />
@@ -59,7 +54,6 @@
             </div>
           </a>
 
-          <!-- MENU ĐIỀU HƯỚNG -->
           <nav
             class="hidden md:flex space-x-8 font-medium text-sm text-[#f0e2d5]"
           >
@@ -105,7 +99,6 @@
         </div>
       </div>
 
-      <!-- Mobile Nav -->
       <div
         id="mobile-nav"
         class="hidden md:hidden bg-[#3a2214] px-4 py-3 space-y-2 text-sm border-t border-[#d9822b]/30"
@@ -160,7 +153,7 @@
 
     <!-- MAIN CONTENT -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow">
-      <!-- LỌC DANH MỤC & TÌM KIẾM -->
+      <!-- BỘ LỌC & TÌM KIẾM -->
       <div
         class="flex flex-col md:flex-row justify-between items-center gap-4 mb-10 pb-6 border-b border-[#d9822b]/20"
       >
@@ -168,7 +161,7 @@
           <button
             onclick="filterCategory('all')"
             id="btn-all"
-            class="filter-btn active-btn bg-[#4a2810] text-[#fceecb] px-4 py-2 rounded-full border border-[#d9822b]/30 shadow transition"
+            class="filter-btn bg-[#4a2810] text-[#fceecb] px-4 py-2 rounded-full border border-[#d9822b]/30 shadow transition"
           >
             Tất cả
           </button>
@@ -209,24 +202,24 @@
         </div>
       </div>
 
-      <!-- BÀI VIẾT NỔI BẬT (FEATURED POST) -->
+      <!-- BÀI VIẾT NỔI BẬT -->
       <div
         class="post-item duong-sinh bg-white rounded-3xl border border-[#d9822b]/20 shadow-xl overflow-hidden mb-12 grid grid-cols-1 lg:grid-cols-12 gap-0"
       >
-        <div
-          class="lg:col-span-7 bg-[#3a2214] min-h-[250px] lg:min-h-[350px] relative overflow-hidden flex items-center justify-center text-gray-400"
+        <a
+          href="chi-tiet-tin-tuc.html?id=vai-gay"
+          class="lg:col-span-7 bg-[#3a2214] min-h-[250px] lg:min-h-[350px] relative overflow-hidden flex items-center justify-center group"
         >
-          <div
-            class="absolute inset-0 bg-cover bg-center opacity-80"
-            style="
-              background-image: url(&quot;https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&quot;);
-            "
-          ></div>
+          <img
+            src="https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/sodiksl9r1wpuq7qv579.jpg"
+            alt="Bí Quyết Giảm Căng Thẳng và Đau Mỏi Vai Gáy"
+            class="absolute inset-0 w-full h-full object-cover object-center opacity-80 group-hover:scale-105 transition duration-500"
+          />
           <span
             class="relative z-10 bg-[#2c1a0e]/80 text-[#d9822b] text-xs px-3 py-1 rounded-full border border-[#d9822b]/30"
             >Bài viết nổi bật</span
           >
-        </div>
+        </a>
         <div class="lg:col-span-5 p-6 md:p-8 flex flex-col justify-between">
           <div>
             <div
@@ -237,9 +230,11 @@
               <span class="text-gray-400 font-normal">10/08/2026</span>
             </div>
             <h2
-              class="post-title text-xl md:text-2xl font-bold text-[#4a2810] hover:text-[#d9822b] transition cursor-pointer mb-3"
+              class="post-title text-xl md:text-2xl font-bold text-[#4a2810] hover:text-[#d9822b] transition mb-3"
             >
-              Bí Quyết Giảm Căng Thẳng & Đau Mỏi Vai Gáy Cho Dân Văn Phòng
+              <a href="chi-tiet-tin-tuc.html?id=vai-gay"
+                >Bí Quyết Giảm Căng Thẳng & Đau Mỏi Vai Gáy Cho Dân Văn Phòng</a
+              >
             </h2>
             <p class="text-gray-600 text-sm leading-relaxed mb-6">
               Thói quen ngồi lâu trước máy tính khiến vùng cổ vai gáy dễ bị xơ
@@ -249,7 +244,7 @@
           </div>
           <div>
             <a
-              href="#"
+              href="chi-tiet-tin-tuc.html?id=vai-gay"
               class="inline-flex items-center gap-2 text-xs font-bold text-[#4a2810] hover:text-[#d9822b] transition"
             >
               Đọc tiếp bài viết <i class="fa-solid fa-arrow-right"></i>
@@ -258,7 +253,7 @@
         </div>
       </div>
 
-      <!-- DANH SÁCH BÀI VIẾT (GRID CARD) -->
+      <!-- DANH SÁCH BÀI VIẾT -->
       <div
         id="posts-grid"
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
@@ -268,7 +263,10 @@
           class="post-item duong-sinh bg-white rounded-2xl border border-[#d9822b]/20 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between"
         >
           <div>
-            <div class="h-48 bg-gray-200 relative overflow-hidden">
+            <a
+              href="chi-tiet-tin-tuc.html?id=ngam-chan"
+              class="h-48 bg-gray-200 relative overflow-hidden block"
+            >
               <img
                 src="https://images2.thanhnien.vn/528068263637045248/2024/8/18/ngam-chan-hoa-free-17239614701621956490677.jpg"
                 alt="Ngâm chân thảo dược"
@@ -278,13 +276,15 @@
                 class="absolute top-3 left-3 bg-[#4a2810]/90 text-[#fceecb] text-[10px] font-bold px-3 py-1 rounded-full uppercase"
                 >Dưỡng Sinh</span
               >
-            </div>
+            </a>
             <div class="p-6">
               <span class="text-xs text-gray-400">08/08/2026</span>
               <h3
                 class="post-title text-lg font-bold text-[#4a2810] mt-1 mb-2 hover:text-[#d9822b] transition"
               >
-                Lợi Ích Của Việc Ngâm Chân Thảo Dược Mỗi Tối
+                <a href="chi-tiet-tin-tuc.html?id=ngam-chan"
+                  >Lợi Ích Của Việc Ngâm Chân Thảo Dược Mỗi Tối</a
+                >
               </h3>
               <p class="text-gray-600 text-xs leading-relaxed line-clamp-3">
                 Ngâm chân thảo dược giúp kích thích các huyệt đạo dưới bàn chân,
@@ -295,7 +295,7 @@
           </div>
           <div class="px-6 pb-6 pt-2">
             <a
-              href="#"
+              href="chi-tiet-tin-tuc.html?id=ngam-chan"
               class="text-xs font-bold text-[#d9822b] hover:underline inline-flex items-center gap-1"
             >
               Xem chi tiết <i class="fa-solid fa-angle-right text-[10px]"></i>
@@ -308,7 +308,10 @@
           class="post-item cam-soc-da bg-white rounded-2xl border border-[#d9822b]/20 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between"
         >
           <div>
-            <div class="h-48 bg-gray-200 relative overflow-hidden">
+            <a
+              href="chi-tiet-tin-tuc.html?id=lay-nhan-mun"
+              class="h-48 bg-gray-200 relative overflow-hidden block"
+            >
               <img
                 src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=500"
                 alt="Chăm sóc da Y Khoa"
@@ -318,13 +321,15 @@
                 class="absolute top-3 left-3 bg-[#4a2810]/90 text-[#fceecb] text-[10px] font-bold px-3 py-1 rounded-full uppercase"
                 >Chăm Sóc Da</span
               >
-            </div>
+            </a>
             <div class="p-6">
               <span class="text-xs text-gray-400">05/08/2026</span>
               <h3
                 class="post-title text-lg font-bold text-[#4a2810] mt-1 mb-2 hover:text-[#d9822b] transition"
               >
-                Tại Sao Nên Lấy Nhân Mụn Chuẩn Y Khoa Tại Spa?
+                <a href="chi-tiet-tin-tuc.html?id=lay-nhan-mun"
+                  >Tại Sao Nên Lấy Nhân Mụn Chuẩn Y Khoa Tại Spa?</a
+                >
               </h3>
               <p class="text-gray-600 text-xs leading-relaxed line-clamp-3">
                 Nặn mụn sai cách tại nhà dễ dẫn đến sẹo rỗ và thâm gồ dề. Hãy
@@ -335,7 +340,7 @@
           </div>
           <div class="px-6 pb-6 pt-2">
             <a
-              href="#"
+              href="chi-tiet-tin-tuc.html?id=lay-nhan-mun"
               class="text-xs font-bold text-[#d9822b] hover:underline inline-flex items-center gap-1"
             >
               Xem chi tiết <i class="fa-solid fa-angle-right text-[10px]"></i>
@@ -348,9 +353,12 @@
           class="post-item meo-lam-dep bg-white rounded-2xl border border-[#d9822b]/20 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between"
         >
           <div>
-            <div class="h-48 bg-gray-200 relative overflow-hidden">
+            <a
+              href="chi-tiet-tin-tuc.html?id=massage-da-nong"
+              class="h-48 bg-gray-200 relative overflow-hidden block"
+            >
               <img
-                src="https://topmassage.net/wp-content/uploads/2024/03/massage-da-nong-co-tac-dung-gi.jpg "
+                src="https://topmassage.net/wp-content/uploads/2024/03/massage-da-nong-co-tac-dung-gi.jpg"
                 alt="Massage đá nóng"
                 class="w-full h-full object-cover hover:scale-105 transition duration-500"
               />
@@ -358,13 +366,15 @@
                 class="absolute top-3 left-3 bg-[#4a2810]/90 text-[#fceecb] text-[10px] font-bold px-3 py-1 rounded-full uppercase"
                 >Mẹo Làm Đẹp</span
               >
-            </div>
+            </a>
             <div class="p-6">
               <span class="text-xs text-gray-400">01/08/2026</span>
               <h3
                 class="post-title text-lg font-bold text-[#4a2810] mt-1 mb-2 hover:text-[#d9822b] transition"
               >
-                Tác Dụng Tuyệt Mời Của Massage Đá Nóng Thạch Anh
+                <a href="chi-tiet-tin-tuc.html?id=massage-da-nong"
+                  >Tác Dụng Tuyệt Mời Của Massage Đá Nóng Thạch Anh</a
+                >
               </h3>
               <p class="text-gray-600 text-xs leading-relaxed line-clamp-3">
                 Sức nhiệt từ đá nóng tự nhiên thẩm thấu sâu vào các cơ, giúp xua
@@ -375,7 +385,7 @@
           </div>
           <div class="px-6 pb-6 pt-2">
             <a
-              href="#"
+              href="chi-tiet-tin-tuc.html?id=massage-da-nong"
               class="text-xs font-bold text-[#d9822b] hover:underline inline-flex items-center gap-1"
             >
               Xem chi tiết <i class="fa-solid fa-angle-right text-[10px]"></i>
@@ -388,7 +398,10 @@
           class="post-item cam-soc-da bg-white rounded-2xl border border-[#d9822b]/20 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between"
         >
           <div>
-            <div class="h-48 bg-gray-200 relative overflow-hidden">
+            <a
+              href="chi-tiet-tin-tuc.html?id=dien-di-c"
+              class="h-48 bg-gray-200 relative overflow-hidden block"
+            >
               <img
                 src="https://nhathuocngocanh.com/wp-content/uploads/2022/07/dien-di.jpg"
                 alt="Điện di Vitamin C"
@@ -398,13 +411,15 @@
                 class="absolute top-3 left-3 bg-[#4a2810]/90 text-[#fceecb] text-[10px] font-bold px-3 py-1 rounded-full uppercase"
                 >Chăm Sóc Da</span
               >
-            </div>
+            </a>
             <div class="p-6">
               <span class="text-xs text-gray-400">28/07/2026</span>
               <h3
                 class="post-title text-lg font-bold text-[#4a2810] mt-1 mb-2 hover:text-[#d9822b] transition"
               >
-                Bí Quyết Phục Hồi Da Sạm Nắng Bằng Điện Di Vitamin C
+                <a href="chi-tiet-tin-tuc.html?id=dien-di-c"
+                  >Bí Quyết Phục Hồi Da Sạm Nắng Bằng Điện Di Vitamin C</a
+                >
               </h3>
               <p class="text-gray-600 text-xs leading-relaxed line-clamp-3">
                 Ánh nắng mặt trời khiến làn da dễ bị sạm nám và đốm nâu. Phương
@@ -415,7 +430,7 @@
           </div>
           <div class="px-6 pb-6 pt-2">
             <a
-              href="#"
+              href="chi-tiet-tin-tuc.html?id=dien-di-c"
               class="text-xs font-bold text-[#d9822b] hover:underline inline-flex items-center gap-1"
             >
               Xem chi tiết <i class="fa-solid fa-angle-right text-[10px]"></i>
@@ -428,7 +443,10 @@
           class="post-item meo-lam-dep bg-white rounded-2xl border border-[#d9822b]/20 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between"
         >
           <div>
-            <div class="h-48 bg-gray-200 relative overflow-hidden">
+            <a
+              href="chi-tiet-tin-tuc.html?id=tay-te-bao-chet"
+              class="h-48 bg-gray-200 relative overflow-hidden block"
+            >
               <img
                 src="https://cf.shopee.vn/file/sg-11134201-22120-ai2f8037z8kv95"
                 alt="Chăm sóc gót chân"
@@ -438,13 +456,15 @@
                 class="absolute top-3 left-3 bg-[#4a2810]/90 text-[#fceecb] text-[10px] font-bold px-3 py-1 rounded-full uppercase"
                 >Mẹo Làm Đẹp</span
               >
-            </div>
+            </a>
             <div class="p-6">
               <span class="text-xs text-gray-400">22/07/2026</span>
               <h3
                 class="post-title text-lg font-bold text-[#4a2810] mt-1 mb-2 hover:text-[#d9822b] transition"
               >
-                Hướng Dẫn Tẩy Tế Bào Chết Và Chà Gót Chân Tại Nhà
+                <a href="chi-tiet-tin-tuc.html?id=tay-te-bao-chet"
+                  >Hướng Dẫn Tẩy Tế Bào Chết Và Chà Gót Chân Tại Nhà</a
+                >
               </h3>
               <p class="text-gray-600 text-xs leading-relaxed line-clamp-3">
                 Gót chân bị khô nẻ khiến bạn mất tự tin? Tham khảo ngay các bước
@@ -455,7 +475,7 @@
           </div>
           <div class="px-6 pb-6 pt-2">
             <a
-              href="#"
+              href="chi-tiet-tin-tuc.html?id=tay-te-bao-chet"
               class="text-xs font-bold text-[#d9822b] hover:underline inline-flex items-center gap-1"
             >
               Xem chi tiết <i class="fa-solid fa-angle-right text-[10px]"></i>
@@ -468,7 +488,10 @@
           class="post-item duong-sinh bg-white rounded-2xl border border-[#d9822b]/20 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between"
         >
           <div>
-            <div class="h-48 bg-gray-200 relative overflow-hidden">
+            <a
+              href="chi-tiet-tin-tuc.html?id=goi-dau-thao-moc"
+              class="h-48 bg-gray-200 relative overflow-hidden block"
+            >
               <img
                 src="https://skinlab.vn/wp-content/uploads/2025/12/goi-dau-duong-sinh-thao-duoc-3.jpg"
                 alt="Gội đầu thảo mộc"
@@ -478,13 +501,15 @@
                 class="absolute top-3 left-3 bg-[#4a2810]/90 text-[#fceecb] text-[10px] font-bold px-3 py-1 rounded-full uppercase"
                 >Dưỡng Sinh</span
               >
-            </div>
+            </a>
             <div class="p-6">
               <span class="text-xs text-gray-400">15/07/2026</span>
               <h3
                 class="post-title text-lg font-bold text-[#4a2810] mt-1 mb-2 hover:text-[#d9822b] transition"
               >
-                Gội Đầu Dưỡng Sinh Thảo Mộc - Giải Pháp Cho Tóc Khơ Xơ
+                <a href="chi-tiet-tin-tuc.html?id=goi-dau-thao-moc"
+                  >Gội Đầu Dưỡng Sinh Thảo Mộc - Giải Pháp Cho Tóc Khơ Xơ</a
+                >
               </h3>
               <p class="text-gray-600 text-xs leading-relaxed line-clamp-3">
                 Sử dụng các thành phần bồ kết, sả, chanh, mần trầu nấu thủ công
@@ -495,7 +520,7 @@
           </div>
           <div class="px-6 pb-6 pt-2">
             <a
-              href="#"
+              href="chi-tiet-tin-tuc.html?id=goi-dau-thao-moc"
               class="text-xs font-bold text-[#d9822b] hover:underline inline-flex items-center gap-1"
             >
               Xem chi tiết <i class="fa-solid fa-angle-right text-[10px]"></i>
@@ -504,7 +529,6 @@
         </article>
       </div>
 
-      <!-- Thông báo khi không tìm thấy bài viết -->
       <div
         id="no-result"
         class="hidden text-center py-12 text-gray-500 text-sm"
@@ -558,20 +582,17 @@
       </div>
     </footer>
 
-    <!-- JAVASCRIPT XỬ LÝ ĐIỀU HƯỚNG & LỌC DANH MỤC -->
     <script>
       function toggleMobileNav() {
         const nav = document.getElementById("mobile-nav");
         nav.classList.toggle("hidden");
       }
 
-      // Hàm lọc bài viết theo danh mục
       function filterCategory(category) {
         const items = document.querySelectorAll(".post-item");
         const buttons = document.querySelectorAll(".filter-btn");
         let visibleCount = 0;
 
-        // Cập nhật trạng thái nút được chọn
         buttons.forEach((btn) => {
           btn.classList.remove("bg-[#4a2810]", "text-[#fceecb]", "shadow");
           btn.classList.add("bg-white", "text-[#4a2810]");
@@ -583,7 +604,6 @@
           activeBtn.classList.add("bg-[#4a2810]", "text-[#fceecb]", "shadow");
         }
 
-        // Hiện / Ẩn bài viết
         items.forEach((item) => {
           if (category === "all" || item.classList.contains(category)) {
             item.style.display = "flex";
@@ -593,7 +613,6 @@
           }
         });
 
-        // Kiểm tra xem có bài viết hiển thị không
         const noResult = document.getElementById("no-result");
         if (visibleCount === 0) {
           noResult.classList.remove("hidden");
@@ -602,7 +621,6 @@
         }
       }
 
-      // Hàm tìm kiếm bài viết theo từ khóa
       function searchPosts() {
         const query = document
           .getElementById("search-input")
@@ -630,6 +648,5 @@
         }
       }
     </script>
-    <script src="js/main.js"></script>
   </body>
 </html>
